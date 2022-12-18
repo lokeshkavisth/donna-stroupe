@@ -2,4 +2,12 @@ Do you know the best way to show your skills to employers or potential clients? 
 
 Setup:
 
-    run npm i && npm start for both client and server side to start the app
+   Run this cmd to initialized project
+   npm init
+   
+   Run this cmd to run this project
+   npm start
+   
+   or
+   
+   npm run start
