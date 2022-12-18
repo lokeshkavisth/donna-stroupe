@@ -4,7 +4,7 @@ Do you know the best way to show your skills to employers or potential clients? 
 
 Setup:
 
-Run this cmd to initialized and run this project
+Run these cmd to initialize and run this project
 
         npm init
         npm start
