@@ -6,6 +6,6 @@ Setup:
 
 Run this cmd to initialized and run this project
 
-npm init
-npm start
-npm run start
+        npm init
+        npm start
+        npm run start
