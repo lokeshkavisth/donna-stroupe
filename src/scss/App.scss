@@ -1,0 +1,420 @@
+// import defaults
+
+@import url(./_resets.scss);
+
+// general styling
+
+// header
+
+.header {
+  header {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: var(--nav-top-space) 0 0;
+
+      .nav__logo,
+      .nav__text {
+        p {
+          letter-spacing: var(--letter-space-1);
+        }
+      }
+    }
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1 {
+      margin-top: var(--nav-top-space);
+    }
+    > h2 {
+      color: var(--text-sub);
+      margin-top: -4rem;
+    }
+
+    .hero__img {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: var(--nav-top-space);
+      width: 70%;
+
+      img {
+        &:nth-child(2) {
+          width: 120%;
+          margin: 0 -5rem;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+// main
+main {
+  article {
+    // about
+
+    .about__container {
+      margin: var(--section-space) 0;
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: var(--side-space);
+
+      .about__text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > h2 {
+          font-family: var(--ff-cinzel);
+          font-size: calc(var(--main-heading));
+        }
+        > p {
+          text-align: justify;
+        }
+      }
+
+      .about__img {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+          object-fit: cover;
+          height: 50rem;
+        }
+      }
+    }
+
+    // projects
+
+    .project__container {
+      // project one
+
+      .project__one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 var(--side-space);
+        .one__text {
+          > h2 {
+            writing-mode: vertical-rl;
+          }
+        }
+
+        .one__img {
+          img {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            margin-block: 2rem;
+          }
+        }
+      }
+
+      // project two
+
+      .project__two {
+        display: flex;
+        justify-content: space-between;
+        margin: var(--section-space) 0;
+        > div {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .container__one {
+          align-self: flex-end;
+          > h2 {
+            line-height: var(--sub-line);
+            padding-left: var(--side-space);
+            margin-bottom: 6rem;
+          }
+        }
+        .container__two {
+          > p {
+            text-align: justify;
+            padding: 0 var(--side-space) 0 0;
+          }
+          img {
+            width: 100%;
+            align-self: flex-end;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      // project three
+      .project__three {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .img__container {
+          display: flex;
+          justify-content: space-between;
+          > div {
+            img {
+              aspect-ratio: 16/9;
+              object-fit: cover;
+            }
+          }
+
+          .box__one {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .box__two {
+            width: 66.5%;
+          }
+        }
+
+        .title__one {
+          margin-bottom: 4rem;
+        }
+
+        .title__two {
+          align-self: flex-end;
+          margin-top: 4rem;
+        }
+      }
+
+      // project four
+      .project__four {
+        display: flex;
+        flex-direction: column;
+        padding: var(--section-space) 0 var(--section-space) var(--side-space);
+
+        > h2 {
+          margin-bottom: 4rem;
+        }
+
+        .img__container {
+          display: flex;
+          justify-content: space-between;
+
+          .one {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+            img {
+              aspect-ratio: 1/1;
+              object-fit: cover;
+            }
+          }
+
+          .two {
+            display: flex;
+            align-items: center;
+            width: 55%;
+
+            img {
+              aspect-ratio: 1/2;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      // project five
+      .project__five {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0 var(--side-space);
+        overflow: hidden;
+
+        > p {
+          text-align: right;
+          width: 70%;
+          align-self: flex-end;
+        }
+
+        .img__container {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          img {
+            height: 40rem;
+            object-fit: cover;
+          }
+        }
+      }
+
+      // .project six
+
+      .project__six {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: var(--section-space) var(--side-space);
+
+        .img__container {
+          display: flex;
+          // align-items: center;
+          justify-content: space-between;
+
+          .one {
+            .img__one {
+              width: 70%;
+              margin-inline: auto;
+              margin-bottom: 4rem;
+            }
+          }
+
+          .two {
+            align-self: flex-end;
+          }
+
+          .three {
+            img {
+              aspect-ratio: 9/17;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .text__container {
+          display: flex;
+          justify-content: space-between;
+          > p {
+            width: 40%;
+            text-align: justify;
+          }
+        }
+      }
+
+      // .project seven
+      .project__seven {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        padding: 0 var(--side-space);
+
+        > p {
+          text-align: right;
+        }
+
+        .img__container {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem;
+
+          > div {
+            width: 30%;
+          }
+
+          .one,
+          .two {
+            align-self: flex-end;
+          }
+
+          .three {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 4rem;
+
+            .img__two {
+              align-self: flex-end;
+              width: 80%;
+            }
+          }
+        }
+      }
+
+      // project eight
+
+      .project__eight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--section-space) var(--side-space);
+
+        > div {
+          display: flex;
+          align-items: center;
+        }
+
+        .text__container {
+          justify-content: space-between;
+          > p {
+            width: 40%;
+            text-align: justify;
+          }
+        }
+
+        .img__container {
+          width: 100%;
+          height: 35rem;
+          overflow: hidden;
+          margin-top: 4rem;
+
+          justify-content: space-between;
+          gap: 2rem;
+
+          .img__one {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+          }
+          .img__two {
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            width: 57%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer
+
+footer {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--side-space);
+
+    .box__one {
+      width: 80%;
+      align-self: flex-end;
+      margin-bottom: 4rem;
+      img {
+        width: 20%;
+      }
+    }
+
+    .box__two {
+      align-self: center;
+      text-align: center;
+      > h2 {
+        margin-top: -9rem;
+        color: var(--text-sub);
+      }
+    }
+
+    .box__three {
+      address {
+        text-align: right;
+      }
+    }
+
+    .box__one,
+    .box__three {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

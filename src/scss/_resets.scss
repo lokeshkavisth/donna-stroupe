@@ -1,0 +1,194 @@
+// copyright 2022 lokeshkavisth
+
+// Google fonts cdn
+
+@font-face {
+  font-family: "Glacial indifference";
+  src: url(../assests/fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+  font-family: "Halimun";
+  src: url(../assests/fonts/Halimun.ttf);
+}
+
+@font-face {
+  font-family: "CINZEL";
+  src: url(../assests/fonts/Cinzel-Regular.ttf);
+}
+
+// CUSTOM PROPERTY
+
+:root {
+  //    COLORS
+  --bg-main: #f7f7f7;
+
+  --text-main: #251b17;
+  --text-sub: #ff5757;
+
+  //  font-family
+  --ff-glacial: "Glacial indifference";
+  --ff-halimun: "Halimun";
+  --ff-cinzel: "CINZEL";
+
+  //   font-size
+  --main-heading: 5rem;
+  --sub-heading: 3rem;
+  --para-text: 1.2rem;
+
+  // font weight
+  --fw-400: 400;
+
+  //  line-height
+  --para-line: 1.6;
+  --heading-line: 1.2;
+  --sub-line: 1.6;
+
+  //   letter-spacing
+
+  --letter-space-1: 0.2rem;
+
+  //    SPACING
+
+  --nav-top-space: 10rem;
+  --section-space: 10rem;
+  --side-space: 8%;
+
+  //    SHADOW
+
+  // BORDER RADIUS
+
+  --radius-1: 1rem;
+  --radius-2: 0.5rem;
+  --radius-circle: 50%;
+
+  //   TRANSITION
+
+  --transition-1: 0.5s ease;
+  --transition-2: 1s ease;
+  --transition-3: 2s ease;
+}
+
+//   RESET
+
+* {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  font-family: var(--ff-glacial);
+  color: var(--text-main);
+  font-weight: var(--fw-400);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+ion-icon,
+textarea {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+button,
+select,
+textarea {
+  background: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  max-width: max-content;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--sub-line);
+}
+
+h1 {
+  font-size: var(--main-heading);
+  font-family: var(--ff-cinzel);
+  line-height: var(--heading-line);
+}
+
+h2 {
+  font-size: var(--sub-heading);
+  font-family: var(--ff-halimun);
+  text-transform: capitalize;
+}
+
+p {
+  line-height: var(--para-line);
+  font-size: var(--para-text);
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: inherit;
+  background-color: var(--bg-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.409rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-1);
+  background-color: var(--text-main);
+}
+
+// .bg {
+//   background: linear-gradient(30deg, #f7f7f7cb, #f7f7f7de),
+//     url(../assests/backgrounds/body-bg.jpg);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
